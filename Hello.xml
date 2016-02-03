@@ -16,20 +16,25 @@
           <block type="oled_drawtext" id="147">
             <field name="TEXT">Pay back Pay back Iza </field>
             <next>
-              <block type="oled_setcursor" id="170" inline="true">
-                <value name="STARTX">
-                  <block type="math_number" id="196">
-                    <field name="NUM">4</field>
-                  </block>
-                </value>
-                <value name="STARTY">
-                  <block type="math_number" id="203">
-                    <field name="NUM">10</field>
-                  </block>
-                </value>
+              <block type="oled_linerect" id="212">
+                <field name="OBJECT">LINE</field>
                 <next>
-                  <block type="oled_drawtext" id="189">
-                    <field name="TEXT">Got a Pay back!!!</field>
+                  <block type="oled_setcursor" id="170" inline="true">
+                    <value name="STARTX">
+                      <block type="math_number" id="196">
+                        <field name="NUM">4</field>
+                      </block>
+                    </value>
+                    <value name="STARTY">
+                      <block type="math_number" id="203">
+                        <field name="NUM">10</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="oled_drawtext" id="189">
+                        <field name="TEXT">Got a Pay back!!!</field>
+                      </block>
+                    </next>
                   </block>
                 </next>
               </block>
