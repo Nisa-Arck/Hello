@@ -1,20 +1,20 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="oled_cleardisplay" id="88" x="-11" y="65">
+  <block type="oled_cleardisplay" id="129" x="-25" y="65">
     <next>
-      <block type="oled_setcursor" id="97" inline="true">
+      <block type="oled_setcursor" id="138" inline="true">
         <value name="STARTX">
-          <block type="math_number" id="113">
+          <block type="math_number" id="154">
             <field name="NUM">4</field>
           </block>
         </value>
         <value name="STARTY">
-          <block type="math_number" id="120">
+          <block type="math_number" id="161">
             <field name="NUM">10</field>
           </block>
         </value>
         <next>
-          <block type="oled_drawtext" id="106">
-            <field name="TEXT">:-( :-(:-(</field>
+          <block type="oled_drawtext" id="147">
+            <field name="TEXT">Pay back Pay back Iza got a Pay back!</field>
           </block>
         </next>
       </block>
