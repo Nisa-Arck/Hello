@@ -59,7 +59,7 @@
                                 </value>
                                 <next>
                                   <block type="oled_drawtext" id="145">
-                                    <field name="TEXT">Spil!</field>
+                                    <field name="TEXT">S-p-i-l!</field>
                                   </block>
                                 </next>
                               </block>
