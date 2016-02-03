@@ -4,7 +4,7 @@
       <block type="oled_setcursor" id="24" inline="true">
         <value name="STARTX">
           <block type="math_number" id="31">
-            <field name="NUM">10</field>
+            <field name="NUM">8</field>
           </block>
         </value>
         <value name="STARTY">
@@ -15,11 +15,6 @@
         <next>
           <block type="oled_drawtext" id="53">
             <field name="TEXT">Good bye cruel world!!!</field>
-            <next>
-              <block type="oled_drawtext" id="62">
-                <field name="TEXT">XP</field>
-              </block>
-            </next>
           </block>
         </next>
       </block>
