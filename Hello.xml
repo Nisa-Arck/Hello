@@ -17,7 +17,7 @@
             <field name="TEXT">Pay back Pay back Iza </field>
             <next>
               <block type="oled_linerect" id="212">
-                <field name="OBJECT">LINE</field>
+                <field name="OBJECT">RECT</field>
                 <next>
                   <block type="oled_setcursor" id="170" inline="true">
                     <value name="STARTX">
