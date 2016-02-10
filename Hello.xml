@@ -55,22 +55,7 @@
                                   <block type="oled_drawtext" id="769">
                                     <field name="TEXT">Vroom!!!</field>
                                     <next>
-                                      <block type="multimedia_doupdate" id="776">
-                                        <next>
-                                          <block type="movement_setmotors" id="827" inline="true">
-                                            <value name="BOTHMOVLEFT">
-                                              <block type="sensor_object" id="899">
-                                                <field name="OBJECT">RIGHTFRONT</field>
-                                              </block>
-                                            </value>
-                                            <value name="BOTHMOVRIGHT">
-                                              <block type="sensor_object" id="830">
-                                                <field name="OBJECT">LEFTFRONT</field>
-                                              </block>
-                                            </value>
-                                          </block>
-                                        </next>
-                                      </block>
+                                      <block type="multimedia_doupdate" id="776"></block>
                                     </next>
                                   </block>
                                 </next>
