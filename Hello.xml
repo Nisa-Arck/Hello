@@ -1,37 +1,70 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="oled_cleardisplay" id="557" x="-1020" y="-490">
-    <next>
-      <block type="oled_setcursor" id="581" inline="true">
-        <value name="STARTX">
-          <block type="math_number" id="614">
-            <field name="NUM">10</field>
-          </block>
-        </value>
-        <value name="STARTY">
-          <block type="math_number" id="621">
-            <field name="NUM">4</field>
-          </block>
-        </value>
+  <block type="controls_whileUntil" id="796" inline="false" x="-950" y="-452">
+    <field name="MODE">UNTIL</field>
+    <value name="NUMBER">
+      <block type="sensor_button" id="817">
+        <field name="OBJECT">ENTER</field>
+      </block>
+    </value>
+    <statement name="DO">
+      <block type="multimedia_stopupdate" id="789">
         <next>
-          <block type="oled_drawtext" id="572">
-            <field name="TEXT">Guess the number!</field>
+          <block type="oled_cleardisplay" id="644">
             <next>
-              <block type="oled_setcursor" id="607" inline="true">
+              <block type="oled_setcursor" id="653" inline="true">
                 <value name="STARTX">
-                  <block type="math_number" id="628">
+                  <block type="math_number" id="660">
                     <field name="NUM">10</field>
                   </block>
                 </value>
                 <value name="STARTY">
-                  <block type="math_number" id="635">
-                    <field name="NUM">4</field>
+                  <block type="math_number" id="667">
+                    <field name="NUM">10</field>
                   </block>
                 </value>
                 <next>
-                  <block type="oled_drawnumber" id="590" inline="true">
+                  <block type="oled_drawnumber" id="676" inline="true">
                     <value name="NUMBER">
-                      <block type="math_random" id="546"></block>
+                      <block type="sensor_object" id="691">
+                        <field name="OBJECT">LEFTFRONT</field>
+                      </block>
                     </value>
+                    <next>
+                      <block type="oled_drawtext" id="700">
+                        <field name="TEXT">   </field>
+                        <next>
+                          <block type="oled_setcursor" id="716" inline="true">
+                            <value name="STARTX">
+                              <block type="math_number" id="723">
+                                <field name="NUM">100</field>
+                              </block>
+                            </value>
+                            <value name="STARTY">
+                              <block type="math_number" id="730">
+                                <field name="NUM">10</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="oled_drawnumber" id="747" inline="true">
+                                <value name="NUMBER">
+                                  <block type="sensor_object" id="760">
+                                    <field name="OBJECT">RIGHTFRONT</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="oled_drawtext" id="769">
+                                    <field name="TEXT">   </field>
+                                    <next>
+                                      <block type="multimedia_doupdate" id="776"></block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
                   </block>
                 </next>
               </block>
@@ -39,6 +72,6 @@
           </block>
         </next>
       </block>
-    </next>
+    </statement>
   </block>
 </xml>
