@@ -31,7 +31,7 @@
                     </value>
                     <next>
                       <block type="oled_drawtext" id="700">
-                        <field name="TEXT">   </field>
+                        <field name="TEXT">Vroom!!!</field>
                         <next>
                           <block type="oled_setcursor" id="716" inline="true">
                             <value name="STARTX">
@@ -53,7 +53,7 @@
                                 </value>
                                 <next>
                                   <block type="oled_drawtext" id="769">
-                                    <field name="TEXT">   </field>
+                                    <field name="TEXT">Vroom!!!</field>
                                     <next>
                                       <block type="multimedia_doupdate" id="776">
                                         <next>
