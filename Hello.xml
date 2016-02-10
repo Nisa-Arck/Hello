@@ -1,5 +1,1 @@
-<xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="sensor_light" id="16" x="-664" y="-347">
-    <field name="LIGHT">REAR</field>
-  </block>
-</xml>
+<xml xmlns="http://www.w3.org/1999/xhtml"></xml>
