@@ -79,6 +79,25 @@
                                 <next>
                                   <block type="oled_drawtext" id="354">
                                     <field name="TEXT">I am sooo smart!</field>
+                                    <next>
+                                      <block type="oled_setcursor" id="369" inline="true">
+                                        <value name="STARTX">
+                                          <block type="math_number" id="376">
+                                            <field name="NUM">0</field>
+                                          </block>
+                                        </value>
+                                        <value name="STARTY">
+                                          <block type="math_number" id="383">
+                                            <field name="NUM">30</field>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="oled_drawtext" id="392">
+                                            <field name="TEXT">See? S-m-r-t</field>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
                                   </block>
                                 </next>
                               </block>
