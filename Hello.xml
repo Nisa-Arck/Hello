@@ -1,3 +1,3 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_forward" id="175" x="-1150" y="-512"></block>
+  <block type="oled_cleardisplay" id="162" x="-634" y="-443"></block>
 </xml>
