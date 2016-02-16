@@ -93,7 +93,7 @@
                                         </value>
                                         <next>
                                           <block type="oled_drawtext" id="392">
-                                            <field name="TEXT">See? S-m-r-t</field>
+                                            <field name="TEXT">See? S-m-r-t! Smart!</field>
                                           </block>
                                         </next>
                                       </block>
