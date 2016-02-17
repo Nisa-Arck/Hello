@@ -91,7 +91,26 @@
                                                 </value>
                                                 <next>
                                                   <block type="oled_drawtext" id="751">
-                                                    <field name="TEXT">move away from the snow plow</field>
+                                                    <field name="TEXT">move away from the </field>
+                                                    <next>
+                                                      <block type="oled_setcursor" id="753" inline="true">
+                                                        <value name="STARTX">
+                                                          <block type="math_number" id="754">
+                                                            <field name="NUM">4</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="STARTY">
+                                                          <block type="math_number" id="755">
+                                                            <field name="NUM">20</field>
+                                                          </block>
+                                                        </value>
+                                                        <next>
+                                                          <block type="oled_drawtext" id="752">
+                                                            <field name="TEXT">snow plow</field>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
                                                   </block>
                                                 </next>
                                               </block>
