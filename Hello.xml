@@ -138,32 +138,6 @@
                                                                     <statement name="ELSE">
                                                                       <block type="movement_forward" id="843"></block>
                                                                     </statement>
-                                                                    <next>
-                                                                      <block type="controls_if" id="856" inline="false">
-                                                                        <mutation else="1"></mutation>
-                                                                        <value name="IF0">
-                                                                          <block type="sensor_object" id="857">
-                                                                            <field name="OBJECT">LEFTFRONT</field>
-                                                                          </block>
-                                                                        </value>
-                                                                        <statement name="DO0">
-                                                                          <block type="movement_right" id="871">
-                                                                            <next>
-                                                                              <block type="robot_delay" id="859" inline="true">
-                                                                                <value name="DELAY">
-                                                                                  <block type="math_number" id="860">
-                                                                                    <field name="NUM">2000</field>
-                                                                                  </block>
-                                                                                </value>
-                                                                              </block>
-                                                                            </next>
-                                                                          </block>
-                                                                        </statement>
-                                                                        <statement name="ELSE">
-                                                                          <block type="movement_forward" id="861"></block>
-                                                                        </statement>
-                                                                      </block>
-                                                                    </next>
                                                                   </block>
                                                                 </next>
                                                               </block>
@@ -197,6 +171,162 @@
                         <field name="NUM">150</field>
                       </block>
                     </value>
+                    <next>
+                      <block type="controls_if" id="872" inline="false">
+                        <value name="IF0">
+                          <block type="logic_compare" id="873" inline="true">
+                            <field name="OP">LT</field>
+                            <value name="A">
+                              <block type="sensor_object" id="874">
+                                <field name="OBJECT">LEFTFRONT</field>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <block type="math_number" id="875">
+                                <field name="NUM">75</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <statement name="DO0">
+                          <block type="movement_stop" id="876">
+                            <next>
+                              <block type="led_select" id="877" inline="true">
+                                <field name="ACTION">FLASH</field>
+                                <value name="LED">
+                                  <block type="math_number" id="878">
+                                    <field name="NUM">5</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="led_select" id="879" inline="true">
+                                    <field name="ACTION">FLASH</field>
+                                    <value name="LED">
+                                      <block type="math_number" id="880">
+                                        <field name="NUM">0</field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="led_select" id="881" inline="true">
+                                        <field name="ACTION">FLASH</field>
+                                        <value name="LED">
+                                          <block type="math_number" id="882">
+                                            <field name="NUM">1</field>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="led_select" id="883" inline="true">
+                                            <field name="ACTION">FLASH</field>
+                                            <value name="LED">
+                                              <block type="math_number" id="884">
+                                                <field name="NUM">2</field>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block type="led_select" id="885" inline="true">
+                                                <field name="ACTION">FLASH</field>
+                                                <value name="LED">
+                                                  <block type="math_number" id="886">
+                                                    <field name="NUM">3</field>
+                                                  </block>
+                                                </value>
+                                                <next>
+                                                  <block type="led_select" id="887" inline="true">
+                                                    <field name="ACTION">FLASH</field>
+                                                    <value name="LED">
+                                                      <block type="math_number" id="888">
+                                                        <field name="NUM">4</field>
+                                                      </block>
+                                                    </value>
+                                                    <next>
+                                                      <block type="oled_setcursor" id="889" inline="true">
+                                                        <value name="STARTX">
+                                                          <block type="math_number" id="890">
+                                                            <field name="NUM">4</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="STARTY">
+                                                          <block type="math_number" id="891">
+                                                            <field name="NUM">10</field>
+                                                          </block>
+                                                        </value>
+                                                        <next>
+                                                          <block type="oled_drawtext" id="892">
+                                                            <field name="TEXT">move away from the </field>
+                                                            <next>
+                                                              <block type="oled_setcursor" id="893" inline="true">
+                                                                <value name="STARTX">
+                                                                  <block type="math_number" id="894">
+                                                                    <field name="NUM">4</field>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="STARTY">
+                                                                  <block type="math_number" id="895">
+                                                                    <field name="NUM">20</field>
+                                                                  </block>
+                                                                </value>
+                                                                <next>
+                                                                  <block type="oled_drawtext" id="896">
+                                                                    <field name="TEXT">snow plow</field>
+                                                                    <next>
+                                                                      <block type="robot_delay" id="897" inline="true">
+                                                                        <value name="DELAY">
+                                                                          <block type="math_number" id="898">
+                                                                            <field name="NUM">5000</field>
+                                                                          </block>
+                                                                        </value>
+                                                                        <next>
+                                                                          <block type="controls_if" id="856" inline="false">
+                                                                            <mutation else="1"></mutation>
+                                                                            <value name="IF0">
+                                                                              <block type="sensor_object" id="857">
+                                                                                <field name="OBJECT">LEFTFRONT</field>
+                                                                              </block>
+                                                                            </value>
+                                                                            <statement name="DO0">
+                                                                              <block type="movement_right" id="871">
+                                                                                <next>
+                                                                                  <block type="robot_delay" id="859" inline="true">
+                                                                                    <value name="DELAY">
+                                                                                      <block type="math_number" id="860">
+                                                                                        <field name="NUM">2000</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                  </block>
+                                                                                </next>
+                                                                              </block>
+                                                                            </statement>
+                                                                            <statement name="ELSE">
+                                                                              <block type="movement_forward" id="861"></block>
+                                                                            </statement>
+                                                                          </block>
+                                                                        </next>
+                                                                      </block>
+                                                                    </next>
+                                                                  </block>
+                                                                </next>
+                                                              </block>
+                                                            </next>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </statement>
+                      </block>
+                    </next>
                   </block>
                 </next>
               </block>
