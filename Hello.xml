@@ -123,7 +123,17 @@
                                                                       </block>
                                                                     </value>
                                                                     <statement name="DO0">
-                                                                      <block type="movement_right" id="833"></block>
+                                                                      <block type="movement_left" id="853">
+                                                                        <next>
+                                                                          <block type="robot_delay" id="854" inline="true">
+                                                                            <value name="DELAY">
+                                                                              <block type="math_number" id="855">
+                                                                                <field name="NUM">2000</field>
+                                                                              </block>
+                                                                            </value>
+                                                                          </block>
+                                                                        </next>
+                                                                      </block>
                                                                     </statement>
                                                                     <statement name="ELSE">
                                                                       <block type="movement_forward" id="843"></block>
