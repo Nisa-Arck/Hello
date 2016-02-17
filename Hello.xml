@@ -9,21 +9,61 @@
     <statement name="DO">
       <block type="movement_forward" id="254">
         <next>
-          <block type="robot_delay" id="256" inline="true">
-            <value name="DELAY">
-              <block type="math_number" id="263">
-                <field name="NUM">4000</field>
+          <block type="led_select" id="358" inline="true">
+            <field name="ACTION">ON</field>
+            <value name="LED">
+              <block type="math_number" id="359">
+                <field name="NUM">0</field>
               </block>
             </value>
             <next>
-              <block type="movement_reverse" id="292">
+              <block type="led_select" id="361" inline="true">
+                <field name="ACTION">ON</field>
+                <value name="LED">
+                  <block type="math_number" id="362">
+                    <field name="NUM">5</field>
+                  </block>
+                </value>
                 <next>
-                  <block type="robot_delay" id="294" inline="true">
+                  <block type="robot_delay" id="256" inline="true">
                     <value name="DELAY">
-                      <block type="math_number" id="311">
+                      <block type="math_number" id="263">
                         <field name="NUM">4000</field>
                       </block>
                     </value>
+                    <next>
+                      <block type="led_select" id="372" inline="true">
+                        <field name="ACTION">OFF</field>
+                        <value name="LED">
+                          <block type="math_number" id="373">
+                            <field name="NUM">0</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="led_select" id="374" inline="true">
+                            <field name="ACTION">OFF</field>
+                            <value name="LED">
+                              <block type="math_number" id="375">
+                                <field name="NUM">5</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="movement_reverse" id="292">
+                                <next>
+                                  <block type="robot_delay" id="294" inline="true">
+                                    <value name="DELAY">
+                                      <block type="math_number" id="311">
+                                        <field name="NUM">4000</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
                   </block>
                 </next>
               </block>
